@@ -1,4 +1,4 @@
-package com.dbs.mysqlDemo;
+package com.testing;
 
 public class JavaDemo {
 
