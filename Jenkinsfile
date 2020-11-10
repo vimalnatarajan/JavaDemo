@@ -6,9 +6,8 @@ pipeline {
           // Just print a Hello, Pipeline to the console
           echo "Hello, Pipeline!"
           // Compile a Java file. This requires JDKconfiguration from Jenkins
-          // Executes the Apache Maven commands, clean then package. This requires Apache Maven configuration from Jenkins
-          def mvn = tool (name: 'maven3', type: 'maven') + '/bin/mvn'	   
-	        sh "${mvn} clean package deploy"
+          // Executes the Apache Maven commands, clean then package. This requires Apache Maven configuration from Jenkin
+	  sh "mvn clean"
           echo "Clean Done"
           // List the files in current directory path by executing a default shell command
           sh "ls -ltr"
