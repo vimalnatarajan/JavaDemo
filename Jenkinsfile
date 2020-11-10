@@ -11,9 +11,7 @@ pipeline {
    }
    stage('Mvn Package'){
    steps{ 
-	   // Build using maven
-	   def mvn = tool (name: 'maven3', type: 'maven') + '/bin/mvn'	   
-	   sh "${mvn} clean package deploy"
+	  sh "mvn -version"
    }
    }
    // And next stages if you want to define further...
